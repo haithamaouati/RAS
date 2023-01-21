@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Arabic Text Converter</title>
+  <style>
+    /* CSS styles for the page */
+    textarea {
+      width: 100%;
+      height: 200px;
+      margin-bottom: 10px;
+    }
+    #output {
+      background-color: #eee;
+      font-family: 'Tahoma';
+    }
+    #footer {
+      text-align: center;
+      font-size: 12px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Arabic Text Converter</h1>
+  <textarea id="input"></textarea>
+  <textarea id="output" readonly></textarea>
+  <script>
+    // JavaScript code to convert the text
+    var input = document.getElementById("input");
+    var output = document.getElementById("output");
+    input.addEventListener("input", function() {
+      output.value = input.value.replace(/[\u0600-\u06FF]/g, function(c) {
+        return "&#" + c.charCodeAt(0) + ";";
+      });
+    });
+  </script>
+  <div id="footer">Made with ❤️ by Haitham Aouati</div>
+</body>
+</html>
