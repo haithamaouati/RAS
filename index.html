@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Arabic Text Converter</title>
+  <title>Reverse Arabic Text Converter</title>
   <style>
     /* CSS styles for the page */
     textarea {
@@ -21,7 +21,7 @@
   </style>
 </head>
 <body>
-  <h1>Arabic Text Converter</h1>
+  <h1>Reverse Arabic Text Converter</h1>
   <textarea id="input"></textarea>
   <textarea id="output" readonly></textarea>
   <script>
@@ -29,9 +29,7 @@
     var input = document.getElementById("input");
     var output = document.getElementById("output");
     input.addEventListener("input", function() {
-      output.value = input.value.replace(/[\u0600-\u06FF]/g, function(c) {
-        return "&#" + c.charCodeAt(0) + ";";
-      });
+      output.value = input.value.split("").reverse().join("");
     });
   </script>
   <div id="footer">Made with ❤️ by Haitham Aouati</div>
