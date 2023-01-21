@@ -1,37 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Reverse Arabic Text Converter</title>
+  <title>Reverse Arabic String</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    /* CSS styles for the page */
-    textarea {
-      width: 100%;
-      height: 200px;
-      margin-bottom: 10px;
-    }
-    #output {
-      background-color: #eee;
-      font-family: 'Tahoma';
-    }
-    #footer {
+    /* add some basic styling for the page */
+    body {
       text-align: center;
-      font-size: 12px;
-      margin-top: 20px;
+    }
+    textarea {
+      width: 80%;
+      height: 50px;
+      margin: 10px 0;
     }
   </style>
 </head>
 <body>
-  <h1>Reverse Arabic Text Converter</h1>
-  <textarea id="input"></textarea>
+  <h1>Reverse Arabic String</h1>
+  <textarea id="input" onkeyup="reverseString()"></textarea>
   <textarea id="output" readonly></textarea>
+  <p>Made with ❤️ by Haitham Aouati</p>
   <script>
-    // JavaScript code to convert the text
-    var input = document.getElementById("input");
-    var output = document.getElementById("output");
-    input.addEventListener("input", function() {
-      output.value = input.value.split("").reverse().join("");
-    });
+    function reverseString() {
+      // get the input value
+      var input = document.getElementById("input").value;
+      // reverse the string
+      var output = input.split("").reverse().join("");
+      // display the reversed string in the output textarea
+      document.getElementById("output").value = output;
+    }
   </script>
-  <div id="footer">Made with ❤️ by Haitham Aouati</div>
 </body>
 </html>
