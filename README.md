@@ -14,16 +14,32 @@ ___
 # RAS
 Reverse Arabic String
 
-[RAS](https://haithamaouati.github.io/RAS/) is a free **Converter** arabic text to a format compatible with designing software.
+[RAS](https://haithamaouati.github.io/RAS) is a free **Converter** arabic text to a format compatible with designing software.
 
 ## Table of Contents
 - [Demo](#demo)
+- [Reverse](#reverse)
+  - [Function](#function)
 - [Author](#author)
 - [License](#license)
 
 ## Demo
 Version: **1.0**
-[https://haithamaouati.github.io/RAS/](https://haithamaouati.github.io/RAS/)
+[https://haithamaouati.github.io/RAS](https://haithamaouati.github.io/RAS/)
+
+## Reverse
+
+###### Function
+Here is a function flow chart:
+
+```mermaid
+graph TD;
+    الهأ-->أهلا;
+    أهلا-->الهأ;
+```
+
+>**Note**:
+> When entering the reversed Arabic text, it will be reversed and vice versa.
 
 ## Author
 Made with :heart: by **Haitham Aouati**
