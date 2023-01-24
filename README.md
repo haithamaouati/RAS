@@ -35,8 +35,8 @@ Here is a function flow chart:
 ```mermaid
 flowchart LR;
 A[الهأ] -->|Reverse| B((أهلا));
-A<-->|Vice Versa|B
-B-->|Reverse|A
+A<-->|Vice Versa|B;
+B-->|Reverse|A;
 ```
 
 >**Note**:
