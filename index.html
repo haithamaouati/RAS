@@ -36,14 +36,13 @@
   <textarea id="output" dir="rtl" placeholder="هنا النص المخرج..." readonly></textarea>
   <br>
   <div class="mermaid">
-  graph TD;
-      A-->B;
-      A-->C;
-      B-->D;
-      C-->D;
+  graph LR;
+      A[الهأ] -->|Reverse| B((أهلا));
+      A<-->|Vice Versa|B
+      B-->|Reverse|A;
   </div>
   <br>
-  <p><small>Version: <b>1.0</b></small></p>
+  <p><small>Version: <b>2.0</b></small></p>
   <a class="github-button" href="https://github.com/haithamaouati/ras" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star haithamaouati/ras on GitHub">Star</a>
   <p>Made with ❤️ by <b>Haitham Aouati</b></p>
   <script>
