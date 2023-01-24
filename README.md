@@ -24,7 +24,7 @@ Reverse Arabic String
 - [License](#license)
 
 ## Demo
-Version: **1.0**
+Version: **2.0**
 [https://haithamaouati.github.io/RAS](https://haithamaouati.github.io/RAS/)
 
 ## Reverse
