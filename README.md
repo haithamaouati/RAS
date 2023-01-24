@@ -19,7 +19,6 @@ Reverse Arabic String
 ## Table of Contents
 - [Demo](#demo)
 - [Reverse](#reverse)
-  - [Function](#function)
 - [Author](#author)
 - [License](#license)
 
@@ -29,8 +28,7 @@ Version: **2.0**
 
 ## Reverse
 
-###### Function
-Here is a function flow chart:
+**Flowchart**
 
 ```mermaid
 flowchart LR;
