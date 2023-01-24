@@ -33,9 +33,10 @@ Version: **1.0**
 Here is a function flow chart:
 
 ```mermaid
-graph TD;
-    الهأ-->أهلا;
-    أهلا-->الهأ;
+flowchart LR;
+A[الهأ] -->|Reverse| B((أهلا));
+A<-->|Vice Versa|B
+B-->|Reverse|A
 ```
 
 >**Note**:
