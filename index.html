@@ -34,6 +34,15 @@
   <label for="output-text">Output Text:</label>
   <br>
   <textarea id="output" dir="rtl" placeholder="هنا النص المخرج..." readonly></textarea>
+  <br>
+  <div class="mermaid">
+  graph TD;
+      A-->B;
+      A-->C;
+      B-->D;
+      C-->D;
+  </div>
+  <br>
   <p><small>Version: <b>1.0</b></small></p>
   <a class="github-button" href="https://github.com/haithamaouati/ras" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star haithamaouati/ras on GitHub">Star</a>
   <p>Made with ❤️ by <b>Haitham Aouati</b></p>
@@ -46,7 +55,10 @@
       // display the reversed string in the output textarea
       document.getElementById("output").value = output;
     }
+
+  mermaid.initialize({startOnLoad:true});
   </script>
   <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@8.5.2/dist/mermaid.min.js"></script>
 </body>
 </html>
